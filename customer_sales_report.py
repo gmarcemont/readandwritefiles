@@ -1,6 +1,5 @@
 import csv
 
-
 def main():
     infile = open('sales.csv', 'r')
     outfile = open('salesreport.csv', 'w')
@@ -12,13 +11,7 @@ def main():
     total = 0
     previous_id = None
     rollup = []
-    # for row in csvfile:
-    # current_id = row[0]
-    # if previous_id == current_id:
-    #    total += float(row[3])
-    # else:
-    #   previous_id = current_id
-    #  total = float(row[3])
+
     for row in csvfile:
         current_id = int(row[0])
         if previous_id != current_id:
